@@ -1,6 +1,6 @@
 #rapid.vim
 
-###Ultra lightweight vim snippets for multiple languages with unobtrusive
+Ultra lightweight vim snippets for multiple languages with unobtrusive
 key bindings.
 
 Inspired by [litecorrect](http://github.com/reedes/litecorrect) and
