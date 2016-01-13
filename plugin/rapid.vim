@@ -30,7 +30,7 @@ function! Rapid()
   augroup rb
     autocmd!
     autocmd filetype ruby,rb call s:Rapid_rb()
-    autocmd filetype .html.erb,erb call s:Rapid_rb()
+    autocmd filetype html.eruby,eruby call s:Rapid_rb()
   augroup end
 endfun
 call Rapid()
