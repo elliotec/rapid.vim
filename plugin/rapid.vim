@@ -24,13 +24,14 @@ function! Rapid()
 
   augroup js
     autocmd!
-    autocmd filetype javascript,js call s:Rapid_js()
+    autocmd FileType javascript,js call s:Rapid_js()
   augroup end
 
   augroup rb
     autocmd!
-    autocmd filetype ruby,rb call s:Rapid_rb()
-    autocmd filetype html.eruby,eruby call s:Rapid_rb()
+    autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby
+    autocmd FileType ruby,rb call s:Rapid_rb()
+    autocmd FileType html.eruby,eruby call s:Rapid_rb()
   augroup end
 endfun
 call Rapid()
