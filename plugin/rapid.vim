@@ -22,17 +22,10 @@ function! Rapid()
     inoremap erR <%=  %><ESC>2hi
   endfun
 
-  augroup js
-    autocmd!
     autocmd FileType javascript,js call s:Rapid_js()
-  augroup end
-
-  augroup rb
-    autocmd!
     autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby
     autocmd FileType ruby,rb call s:Rapid_rb()
     autocmd FileType html.eruby,eruby call s:Rapid_rb()
-  augroup end
 endfun
 call Rapid()
 
