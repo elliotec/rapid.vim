@@ -6,6 +6,7 @@ function! Rapid()
   function! s:Rapid_js()
     inoremap afR function () {<CR>}<ESC>O
     inoremap fnR function name(){<CR><CR>}<ESC>kkwv3l<c-g>
+    inoremap arfR () => {<CR><CR>}<ESC>kkli
     inoremap iifeR (function () {<CR>})();<ESC>O
     inoremap clR console.log();<ESC>hi
     inoremap flR for (var i = 0; i < 9; i++)
